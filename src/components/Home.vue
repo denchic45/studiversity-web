@@ -1,0 +1,33 @@
+<script setup>
+</script>
+<template>
+  <div class="pt-72">
+    <section class="">
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-24  -z-10">
+        <img class="max-w-3xl mx-auto h-auto" src="/images/devices-mockup.png" alt="image description">
+      </div>
+
+      <div class="mx-96 text-center">
+        <h1 class="text-5xl -mt-48 font-extrabold dark:text-white">
+          Образоватьная платформа
+          <br>
+          для учебных заведений
+        </h1>
+        <p class="mt-6 text-xl tracking-tight text-gray-600 dark:text-gray-300">
+          Доступно на Windows, Mac, Linux, Android
+        </p>
+        <div class="mt-8">
+          <button
+              class="inline-flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg px-8 py-4 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              type="button">
+            <svg class="w-6 h-6 text-white me-2 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.806 5.614-4.251.362-2.244 2.243a1.058 1.058 0 0 0 .6 1.8l3.036.356m9.439 1.819-.362 4.25-2.243 2.245a1.059 1.059 0 0 1-1.795-.6l-.449-2.983m9.187-12.57a1.536 1.536 0 0 0-1.26-1.26c-1.818-.313-5.52-.7-7.179.96-1.88 1.88-5.863 9.016-7.1 11.275a1.05 1.05 0 0 0 .183 1.25l.932.939.937.936a1.049 1.049 0 0 0 1.25.183c2.259-1.24 9.394-5.222 11.275-7.1 1.66-1.663 1.275-5.365.962-7.183Zm-3.332 4.187a2.115 2.115 0 1 1-4.23 0 2.115 2.115 0 0 1 4.23 0Z"/>
+            </svg>
+            Начать использовать
+          </button>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</template>
