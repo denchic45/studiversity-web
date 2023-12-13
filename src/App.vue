@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.vue";
 
 <template>
   <Navbar/>
-  <RouterView class="mt-24 p-16"/>
+  <RouterView/>
 </template>
 
 <style scoped>
