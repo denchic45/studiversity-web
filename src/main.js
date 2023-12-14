@@ -6,12 +6,14 @@ import App from './App.vue'
 
 import Home from './components/Home.vue'
 import Pricing from './components/Pricing.vue'
+import Support from './components/Support.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {path: '/', component: Home},
         {path: '/pricing', component: Pricing},
+        {path: '/support', component: Support}
     ]
 });
 

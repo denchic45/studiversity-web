@@ -3,7 +3,7 @@ const props = defineProps(['title', 'text', 'icon'])
 </script>
 
 <template>
-  <div class="rounded-2xl grid grid-cols-[52%_50%]" style="background: #EDF3F4; width: 50rem;">
+  <div class="rounded-2xl grid grid-cols-[52%_50%]" style="background: #EDF3F4; width: 52rem;">
     <div class="p-8">
       <div class="w-20 h-20 flex justify-center items-center rounded-2xl" style="background: #E1E7E7">
         <img alt="" class="w-11 h-11" :src="props.icon"/>

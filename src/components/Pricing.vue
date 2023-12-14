@@ -1,4 +1,10 @@
 <script setup>
+import emitter from 'tiny-emitter/instance';
+import {onBeforeMount} from 'vue'
+
+onBeforeMount(() => {
+  emitter.emit('navbar-theme', 'light');
+})
 
 </script>
 
@@ -116,7 +122,7 @@
           <p class="font-medium text-md text-gray-950">Настройте тариф под свои нужды.</p>
 
           <div class="absolute bottom-5">
-              <span class="font-bold text-2xl text-gray-700">Свяжитесь с нами</span>
+            <span class="font-bold text-2xl text-gray-700">Свяжитесь с нами</span>
             <ul class="mt-4 h-44">
               <li class="flex align-middle my-2">
                 <span class="material-symbols-outlined" style="color:#2A5593;">file_download_done</span>

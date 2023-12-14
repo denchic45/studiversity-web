@@ -1,29 +1,45 @@
 <script setup>
-import {useRoute} from "vue-router";
+import {useRouter} from "vue-router";
+import emitter from 'tiny-emitter/instance';
+import {onMounted, ref} from 'vue'
 
-const route = useRoute();
+const router = useRouter();
 
 const activeItem = "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";
 const inactiveItem = "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
+let theme = ref('none');
 
+function updateTheme(newTheme) {
+  console.log('updateTheme')
+  theme.value = newTheme;
+  console.log('new theme: ' + theme)
+}
+
+function onLogoClick() {
+  router.push({path: '/'})
+}
+
+onMounted(() => {
+  emitter.on('navbar-theme', updateTheme);
+})
 
 </script>
 
 <template>
-  <div class="dark">
+  <div v-bind:class="[theme]">
     <nav
         class="backdrop-blur dark:bg-stone-950 dark:bg-opacity-75 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-none">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-24">
-        <a class="flex items-center space-x-3 rtl:space-x-reverse" href="http://localhost:5173">
+        <div class="flex items-center space-x-3 rtl:space-x-reverse" @click="onLogoClick()" style="cursor: pointer;">
           <img alt="Flowbite Logo" class="h-8" src="/images/logo.svg">
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Studiversity</span>
-        </a>
+        </div>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
           <div id="navbar-sticky" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mr-4">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:dark:bg-none">
               <li>
-                <router-link :class='route.path === "/pricing" ? activeItem : inactiveItem'
+                <router-link :class='router.path === "/pricing" ? activeItem : inactiveItem'
                              aria-current="page"
                              to="/pricing"
                 >Тарифы
@@ -38,7 +54,7 @@ const inactiveItem = "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md
                    target="_blank">GitHub</a>
               </li>
               <li>
-                <router-link :class='route.path === "/support" ? activeItem : inactiveItem'
+                <router-link :class='router.path === "/support" ? activeItem : inactiveItem'
                              aria-current="page"
                              to="/support"
                 >Помощь
