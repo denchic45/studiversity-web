@@ -11,23 +11,23 @@ onBeforeMount(() => {
 </script>
 <template>
   <div>
-    <section class="relative dark bg-stone-950 grid grid-cols-2 px-48 pt-48">
-      <div class="pt-24 z-10">
-        <h1 class="text-5xl font-bold dark:text-white leading-snug">
-          Образоватьная платформа
+    <section class="relative dark bg-stone-950 grid grid-cols-2 px-60 py-72">
+      <div class="z-10 w-max">
+        <h1 class="text-6xl font-bold dark:text-white leading-snug">
+          Образовательная платформа
           <br>
           для учебных заведений
         </h1>
-        <p class="mt-6 text-xl tracking-tight text-gray-600 dark:text-gray-300">
+        <p class="mt-5 text-xl tracking-tight text-gray-600 dark:text-gray-300">
           Доступно на Windows, Mac, Linux, Android
         </p>
         <div class="mt-8 flex fle">
           <a href="https://apps.rustore.ru/app/com.denchic45.studiversity" target="_blank">
-            <img alt="image description" class="inline" height="445" src="/public/images/rustore_badge_black.png"
+            <img alt="image description" class="" height="445" src="/public/images/rustore_badge_black.png"
                  width="134"/>
           </a>
           <a href="https://play.google.com/store/apps/details?id=com.denchic45.studiversity" target="_blank">
-            <img alt="image description" class="inline mx-6" height="445" src="/public/images/google_play_badge.png"
+            <img alt="image description" class=" mx-6" height="445" src="/public/images/google_play_badge.png"
                  width="151"/>
           </a>
 
@@ -50,12 +50,12 @@ onBeforeMount(() => {
 
         </div>
       </div>
-      <img alt="image description" class="relative z-10" src="/images/devices-mockup.png">
-
-      <img alt="" class="absolute bottom-0" src="/public/bg/Glow_Top.webp">
+      <img alt="" class="absolute bottom-0 z-0" src="/public/bg/Glow_Top.webp">
+      <img alt="image description" class="absolute bottom-0 end-60 opacity-80" src="/images/devices-mockup.png"
+           style="width: 860px; height: auto">
     </section>
-    <section class="m-24">
-      <h1 class="text-4xl font-bold text-center mb-20">Ключевые функции</h1>
+    <section class="m-20">
+      <h1 class="text-4xl font-bold text-center mb-16">Ключевые функции</h1>
       <div class="grid grid-cols-3 gap-y-8 justify-items-center mx-auto" style="width: 1284px;">
         <LandingFeature
             icon="/public/icons/online-class.png"
