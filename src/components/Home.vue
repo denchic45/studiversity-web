@@ -11,9 +11,9 @@ onBeforeMount(() => {
 </script>
 <template>
   <div>
-    <section class="relative dark bg-stone-950 grid grid-cols-2 px-60 py-72">
+    <section class="relative dark bg-stone-950 grid grid-cols-2 px-40 py-72">
       <div class="z-10 w-max">
-        <h1 class="text-6xl font-bold dark:text-white leading-snug">
+        <h1 class="text-5xl font-bold dark:text-white leading-snug">
           Образовательная платформа
           <br>
           для учебных заведений
@@ -51,8 +51,8 @@ onBeforeMount(() => {
         </div>
       </div>
       <img alt="" class="absolute bottom-0 z-0" src="/public/bg/Glow_Top.webp">
-      <img alt="image description" class="absolute bottom-0 end-60 opacity-80" src="/images/devices-mockup.png"
-           style="width: 860px; height: auto">
+      <img alt="image description" class="absolute bottom-0 end-40 opacity-80" src="/images/devices-mockup.png"
+           style="width: 840px; height: auto">
     </section>
     <section class="m-20">
       <h1 class="text-4xl font-bold text-center mb-16">Ключевые функции</h1>
