@@ -67,7 +67,9 @@ onMounted(() => {
           <button
               class="border font-medium rounded-full text-sm px-4 py-2 text-center dark:border-white dark:text-white dark:hover:text-black dark:hover:bg-white dark:focus:ring-blue-800"
               type="button">
-            Начать бесплатно
+            <router-link to="/login" >
+              Начать бесплатно
+            </router-link>
           </button>
           <button aria-controls="navbar-sticky" aria-expanded="false"
                   class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
