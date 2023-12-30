@@ -51,12 +51,12 @@ onBeforeMount(() => {
         </div>
       </div>
       <img alt="" class="absolute bottom-0 z-0" src="/public/bg/Glow_Top.webp">
-      <img alt="image description" class="absolute bottom-0 end-40 opacity-80" src="/images/devices-mockup.png"
+      <img alt="image description" class="absolute bottom-0 end-16 opacity-80" src="/images/devices-mockup.png"
            style="width: 840px; height: auto">
     </section>
     <section class="m-20">
-      <h1 class="text-4xl font-bold text-center mb-16">Ключевые функции</h1>
-      <div class="grid grid-cols-3 gap-y-8 justify-items-center mx-auto" style="width: 1284px;">
+      <h1 class="text-4xl font-semibold text-center mb-16">Ключевые функции</h1>
+      <div class="grid grid-cols-3 gap-8 justify-items-center mx-auto" style="width: 1284px;">
         <LandingFeature
             icon="/public/icons/online-class.png"
             text="Преподаватели могут публиковать

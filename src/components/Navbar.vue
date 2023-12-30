@@ -33,11 +33,11 @@ onMounted(() => {
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 h-24">
         <div class="flex items-center space-x-3 rtl:space-x-reverse" @click="onLogoClick()" style="cursor: pointer;">
           <img alt="Flowbite Logo" class="h-8" src="/images/logo.svg">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Studiversity</span>
+          <span class="self-center text-2xl font-medium whitespace-nowrap dark:text-white">Studiversity</span>
         </div>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse ">
           <div id="navbar-sticky" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mr-4">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:dark:bg-none">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:dark:bg-none">
               <li>
                 <router-link :class='router.path === "/pricing" ? activeItem : inactiveItem'
                              aria-current="page"

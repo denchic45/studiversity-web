@@ -17,5 +17,8 @@ module.exports = {
                 'Manrope'
             ],
         },
+        corePlugins: {
+            fontWeight: 600
+        }
     },
 }
